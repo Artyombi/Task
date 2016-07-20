@@ -1,10 +1,10 @@
 <?php 
 //require_once('App/helpers.php');
-require_once('Classes/PHPExcel.php');
+/*require_once('Classes/PHPExcel.php');
 require_once ('Classes/PHPExcel/IOFactory.php');
 $xls = PHPExcel_IOFactory::load('Test.xlsx');
 $xls->setActiveSheetIndex(0);
-$sheet = $xls->getActiveSheet();
+$sheet = $xls->getActiveSheet();*/
 
 //var_dump($xls);
 //die;
@@ -31,7 +31,7 @@ function getFileSize($url) {
 
 if($httpCode == 200) {
 		
-		$xls->getActiveSheet()->getCellByR(3, 4)->getValue();
+		//$xls->getActiveSheet()->getCellByColumnandRow(3, 4)->getValue();
     
     echo "Файл существует. <br>";
     echo "Ответ сервера: " . $httpCode . "<br>";
